@@ -1,4 +1,4 @@
-"Sapientia" is a style by "*Brisk*" **Noah Darville-Jennings** \([site](http://www.noahdj.ca/ "noahdj.ca")\). Copyright © 2011, 2012 “Brisk” Noah Darville-Jennings.
+"Sapientia" is a style by "*Brisk*" **Noah Darville-Jennings** \([site](http://www.noahdj.ca/ "noahdj.ca")\).
 
 This style is based on the stripped down version of the "Simplified" theme developed by "*Cowboy*" **Ben Alman** \([site](http://benalman.com/)\). Which is copyright © 2010 "Cowboy" Ben Alman, and distributed under the following MIT license:
  
