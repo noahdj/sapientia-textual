@@ -1,4 +1,4 @@
-/* Basic Body Structure - Sapientia 1.3 */
+/* Basic Body Structure - Sapientia 1.4 */
 
 * {
 	margin: 0;
@@ -26,6 +26,8 @@ body div#body_home {
 	z-index: 100;
 	max-height: 99.99%;
 	position: absolute;
+	opacity: 0; /* Set by JavaScript */
+	-webkit-transition: opacity 0.8s linear;
 }
 
 body[type=channel] div#body_home {
@@ -40,6 +42,26 @@ body[dir=rtl] .sender {
 	display: inline-block;
 }
 
+/* Loading Screen */
+
+body div#loading_screen {
+	position:absolute; 
+	top: 50%;
+	left: 50%;
+	margin-top: -11px;
+	margin-left: -150px;
+	width: 300px;
+	height: 21px;
+	font-size: 18px;
+	background: #181818;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	opacity: 1; /* Set by JavaScript */
+	-webkit-transition: opacity 0.8s linear;
+}
+
 /* Time */
 
 body[dir=ltr] .time {
@@ -51,6 +73,16 @@ body[dir=rtl] .time {
 	color: #343434;
 	white-space: nowrap; 
 	padding-left: 0.4em;
+	display: inline-block;
+}
+
+/* Encryption Lock */
+
+.encryptionLock img {
+	margin: 0;
+	padding: 0;
+	height: 11px;
+	margin-bottom: -1px;
 	display: inline-block;
 }
 
@@ -76,14 +108,14 @@ a:hover {
 	right: 0;
 	color: #a39888;
 	z-index: 400;
-	opacity: 0.95;
-	font-size: 13px;
+	opacity: 0; /* Set by JavaScript */
 	line-height: 145%;
 	position: fixed;
 	background: -webkit-linear-gradient(top, #494949 0%, #282828 100%);
 	padding: 2px 0.5em 3px;
 	border-bottom: 1px solid #544E45;
 	-webkit-box-shadow: 0 1px 5px #000;
+	-webkit-transition: opacity 0.8s linear;
 }
 
 #topic_bar a {
@@ -117,6 +149,13 @@ div[id=mark] {
 	border-bottom: 1px dashed;
 	border-color: #444;
 	-webkit-transition: 0.2s linear;
+}
+
+/* Historic Line */
+
+.historic 
+{
+	opacity: 0.6;
 }
 
 /* NOTICE/CTCP/WALLOPS */
